@@ -12,7 +12,7 @@ import {
 import { motion } from "framer-motion";
 
 const skills = {
-  title: "My Skills",
+  title: "My Skills", // Title that will be displayed in red color
   description: "Here are some technologies I work with:",
   skillList: [
     { icon: <FaHtml5 />, name: "HTML5" },
@@ -37,19 +37,22 @@ const Skills = () => {
     >
       <div className="flex flex-col items-center justify-center container mx-auto">
         <Tabs className="flex flex-col w-full text-center max-w-[380px] gap-6">
-          {/* content */}
+          {/* Content */}
           <div className="min-h-[70vh] w-full flex items-center justify-center">
             <TabsContent className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
-                <div className="flex flex-col gap-[30px]">
-                  <h3 className="text-4xl font-bold">{skills.title}</h3>
+                <div className="flex flex-col gap-4">
+                  <h3 className="text-4xl font-bold text-red-800">
+                    {skills.title}
+                  </h3>{" "}
+                  {/* Title in red */}
                   <p className="max-w-[600px] text-white/60 mx-auto">
                     {skills.description}
                   </p>
                 </div>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill) => (
-                    <li key={skill.id || skill.name}>
+                  {skills.skillList.map((skill, index) => (
+                    <li key={index}>
                       <TooltipProvider delayDuration={100}>
                         <Tooltip>
                           <TooltipTrigger

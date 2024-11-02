@@ -18,6 +18,7 @@ const Social = ({containerStyles , iconStyles}) => {
             </Link>
         );
     })}
+    
     </div>
   )
 }
