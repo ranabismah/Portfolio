@@ -16,7 +16,7 @@ const page = () => {
               <span className="text-red-800"> Me!</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Hi there! I’m Rana Bisma, a passionate Full Stack Developer just
+              Hi there! I’m Rana Bisma Qasim, a passionate Full Stack Developer just
               starting my journey in the tech industry. With a solid grasp of
               HTML, CSS, and JavaScript/TypeScript I enjoy building engaging web
               applications using frameworks like Next.js and Tailwind CSS.
